@@ -1,10 +1,10 @@
 import logging
-from aiogram import Bot, Dispatcer
+from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
-from aiogram.enums import PaseMode
+from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 from decouple import config
-from apscheduler.schendulers.asyncio import AsyncIOScheduler
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 #from db_handler.db_class import PostgresHandler
 from handlers.start  import start_router
