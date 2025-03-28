@@ -2,7 +2,7 @@ from aiogram import Router, F
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message
 
-start_router = Router()
+start_router = Router(name=__name__)
 
 @start_router.message(CommandStart())
 async def cmd_start(message: Message):
